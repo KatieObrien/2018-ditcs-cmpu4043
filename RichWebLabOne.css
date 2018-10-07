@@ -1,0 +1,26 @@
+#header {
+    background-color: #F1F1F1;
+    text-align: center;
+    /* padding: 20px; */
+}
+
+#content
+ {
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  text-align: left;
+  border-style: solid;
+}
+
+#sidebar {
+  position: absolute;
+  left: 60%;
+  width: 20%;
+  border-style: solid;
+}
+
+footer {
+  position: absolute;
+  bottom: 35%;
+}
