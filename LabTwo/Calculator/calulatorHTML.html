@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" type="text/css" href="calculatorCSS.css"></head>
+    <body>
+        <script src="calculatorJS.js"></script>
+        <div class="main">
+            <form name="numberText">
+                <input class="textview" name="textview">
+            </form>
+            <div class="calcmain">
+                <table>
+                    <tr>
+                        <td><input class="button" type="button" value="(" onclick="numberInput('(')"></td>
+                        <td><input class="button" type="button" value=")" onclick="numberInput(')')"></td>
+                        <td><input class="button" type="button" value="&plusmn" onclick="numberInput('-')"></td>
+                        <td><input class="button" type="button" value="&divide" onclick="numberInput('/')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="button" value="1" onclick="numberInput(1)"></td>
+                        <td><input class="button" type="button" value="2" onclick="numberInput(2)"></td>
+                        <td><input class="button" type="button" value="3" onclick="numberInput(3)"></td>
+                        <td><input class="button" type="button" value="*" onclick="numberInput('*')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="button" value="4" onclick="numberInput(4)"></td>
+                        <td><input class="button" type="button" value="5" onclick="numberInput(5)"></td>
+                        <td><input class="button" type="button" value="6" onclick="numberInput(6)"></td>
+                        <td><input class="button" type="button" value="-" onclick="numberInput('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="button" value="7" onclick="numberInput(7)"></td>
+                        <td><input class="button" type="button" value="8" onclick="numberInput(8)"></td>
+                        <td><input class="button" type="button" value="9" onclick="numberInput(9)"></td>
+                        <td><input class="button" type="button" value="+" onclick="numberInput('+')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="button" value="C" onclick="clearFunc()"></td>
+                        <td><input class="button" type="button" value="0" onclick="numberInput(0)"></td>
+                        <td><input class="button" type="button" value="." onclick="numberInput('.')"></td>
+                        <td><input class="button" type="button" value="=" onclick="equals()"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
