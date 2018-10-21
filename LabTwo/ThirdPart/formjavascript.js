@@ -22,14 +22,14 @@ function getUsers(){
     fetch(y)
     .then((res) => res.json())
     .then((data) => {
-        let output = '<p>Users</p>';
+        let output = '<b><p>User Profile</p></b>';
         
             output += `
-                Name: ${data.name}<br>
-                Login: ${data.login}<br>
-                Email: ${data.email}<br>
-                Location: ${data.location}<br>
-                Number of Gists: ${data.public_gists}<br>
+                <b>Name:</b> ${data.name}<br>
+                <b>Username:</b> ${data.login}<br>
+                <b>Email:</b> ${data.email}<br>
+                <b>Location:</b> ${data.location}<br>
+                <b>Number of Gists:</b> ${data.public_gists}<br>
             
             `;
         //outputting the information to the html 
@@ -40,19 +40,7 @@ function getUsers(){
     fetch(y)
     .then((resp) => resp.json())
     .then((data) => {
-        //let p = document.getElementById("photo").src
-        //let photo = `${data.avatar_url}`;
         document.getElementById("photo").src = data.avatar_url;
-        /*
-        let photo = '<p>Photo</p>';
-        
-            photo += `
-            <ul>
-                <li>ID: ${data.avatar_url}</li>
-            </ul>
-            `;
-        */
-        //document.getElementById('photo').innerHTML = p;
     })
 
     //for the repos
@@ -60,12 +48,13 @@ function getUsers(){
     fetch(r)
     .then((res) => res.json())
     .then((data) => {
-        let repos = '<p>Repos</p>';
+        let repos = '<b><p>User Repos</p></b>';
         //For loop to access all the repos
         data.forEach(function(user) {
             repos += `
-                Name of Repo: ${user.name}<br>
-                Description: ${user.description}<br>
+                <b>Name of Repo:</b> ${user.name}<br>
+                <b>Description:</b> ${user.description}<br>
+                <br>
             `; 
         });
         document.getElementById('repos').innerHTML = repos;

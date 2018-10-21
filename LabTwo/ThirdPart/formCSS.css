@@ -2,27 +2,25 @@
     box-sizing: border-box;
 }
 .searchBar {
-
-
+    width: 50%;
 }
-.searchButton {
-
-
-}
-.outputDiv {
-    display: table;
+.photo {
+    padding: 50px;
+    position: center;
 }
 .output {
     outline-style: double;
     outline-color: gray;
     float: left;
-    width: 45%;
+    width: 30%;
     padding: 10px;
+    border: 1px solid black;
 }
 .repos {
     outline-style: double;
     outline-color: gray;
     float: right;
-    width: 45%;
+    width: 68%;
     padding: 10px;
+    border: 1px solid black;
 }
