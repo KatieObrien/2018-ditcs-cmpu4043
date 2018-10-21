@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.searchBar {
+
+
+}
+.searchButton {
+
+
+}
+.outputDiv {
+    display: table;
+}
+.output {
+    outline-style: double;
+    outline-color: gray;
+    float: left;
+    width: 45%;
+    padding: 10px;
+}
+.repos {
+    outline-style: double;
+    outline-color: gray;
+    float: right;
+    width: 45%;
+    padding: 10px;
+}
