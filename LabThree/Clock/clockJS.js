@@ -1,4 +1,4 @@
-let canvasLength = 850;
+let canvasLength = 550;
 let radius = canvasLength / 2;
 
 let canvas = document.getElementById("canvas");
