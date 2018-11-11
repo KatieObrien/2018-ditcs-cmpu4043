@@ -9,15 +9,18 @@
   <div id="app"></div><div class="row">
     <div class="col left-col">
       <canvas id="canvas" width="192" height="192"></canvas>
-      <h1 id="digital">0:0:00</h1>
-      <div>
-        <button id="start">Start</button>
-        <button id="stop">Stop</button>
-        <button id="split">Split</button>
-        <button id="reset">Reset</button>
-      </div>
+      <h1 id="timer">0:0:00</h1>
+      
     </div>
-    <div class="col right-col" id="splits-list">
+    <div class="col right-col">
+      <div>
+      <button class="buttons" id="start">Start</button> <br/>
+      <button class="buttons" id="stop">Stop</button> <br/>
+      <button class="buttons" id="split">Split</button> <br/>
+      <button class="buttons" id="reset">Reset</button> 
+    </div>
+  </div>
+    <div class="col right-col" id="splitList">
     </div>
   </div>
   <script src="main.js"></script>
